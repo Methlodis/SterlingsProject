@@ -20,7 +20,6 @@ h1 {
 
 h2 {
     text-decoration: underline;
-    line-height: 280%;
     padding-left: 2%;
 }
 
@@ -51,7 +50,7 @@ a {
         text-decoration: underline;
     }
 
-header.navbar {
+.navbar {
     background: #333333;
     width: 100%;
     height: 70px;
@@ -62,7 +61,7 @@ header.navbar {
     opacity: 0.98;
 }
 
-header.navbarstart {
+.navbarstart {
     background: #333333;
     width: 100%;
     height: 70px;
@@ -77,9 +76,10 @@ header.navbarstart {
     height: 50px;
     background-image: url('../icons/terminusforgelarge.png');
 }
-#logo:hover {
-    border-bottom: 2px solid #FFF;
-}
+
+    #logo:hover {
+        border-bottom: 2px solid #FFF;
+    }
 
 nav {
     float: right;
@@ -144,7 +144,7 @@ nav ul li {
 }
 
 .main-content {
-    margin: 10px auto ;
+    margin: 10px auto;
     width: 75%;
     line-height: 25px;
     overflow: hidden;
@@ -153,20 +153,21 @@ nav ul li {
 .front-page-article-header {
     width: 50%;
     height: 50px;
+    float: left;
     margin-bottom: 10px;
     background: #333333;
     color: #f0f0f0;
-    box-shadow: #555 30px 0px inset;
+    border-left: 30px solid #555;
 }
 
-.front-page-article-header h1 {
-    line-height: 10px;
-    padding: 22px;
-}
+    .front-page-article-header h1 {
+        line-height: 10px;
+        padding: 22px;
+    }
 
 .article-content {
     width: 70%;
-    float: left; 
+    float: left;
 }
 
 .article-widget {
@@ -177,18 +178,16 @@ nav ul li {
     color: #333333;
 }
 
-.article-widget a {
-    color: #000;
-    line-height: normal;
-}
+    .article-widget a {
+        color: #000;
+        line-height: normal;
+    }
 
 
 .top-content {
-
 }
 
 .bottom-content {
-
 }
 
 .sidebar {
@@ -205,7 +204,6 @@ nav ul li {
     padding: 2% 3%;
     border-bottom: 2px solid #333333;
     color: #f0f0f0;
-    
 }
 
 .post-info {
@@ -249,16 +247,16 @@ nav ul li {
     opacity: 0.90;
 }
 
-.main-footer p, .main-footer h3 {
-    color: #FFF;
-}
+    .main-footer p, .main-footer h3 {
+        color: #FFF;
+    }
 
-.main-footer p a {
-    color: #FFF;
-    text-decoration: none;
-}
+        .main-footer p a {
+            color: #FFF;
+            text-decoration: none;
+        }
 
-.section-main-footer{
+.section-main-footer {
     width: 29%;
     float: left;
     margin: 2% 2%;
@@ -322,10 +320,56 @@ ul.social li {
         display: block;
     }
 
-    .topic-programming, .topic-other {
-        float: left;
+    .main-content {
         width: 100%;
-        margin: 0px;
-        padding: 0px;
+    }
+
+    .front-page-article-header {
+        width: 90%;
+        float: left;
+        margin: 20px auto 10px 2%;
+    }
+
+        .front-page-article-header h1 {
+            text-align: center;
+        }
+
+    .article-content {
+        width: 90%;
+        float: left;
+        margin-left: 2%;
+    }
+
+
+
+    .article-widget {
+    }
+
+        .article-widget a {
+            color: #000;
+            line-height: normal;
+        }
+
+
+    .top-content {
+    }
+
+    .bottom-content {
+    }
+
+    .sidebar {
+
+    }
+
+    .sidebar-widget {
+
+    }
+
+    .post-info {
+
+    }
+
+    .topic-programming, .topic-other {
+
     }
 }
