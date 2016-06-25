@@ -90,6 +90,7 @@ nav {
     display: hidden;
     width: 40px;
     height: 40px;
+    margin-top: -15px;
     background-image: url('../icons/menu.png');
 }
 
@@ -306,7 +307,6 @@ ul.social li {
         right: 0px;
         top: 70px;
         width: 25%;
-        border-radius: 2px 0px 2px 2px;
     }
 
     nav li {
@@ -320,27 +320,44 @@ ul.social li {
         display: block;
     }
 
+    .current {
+        color: #FFF;
+        border-right: 0px;
+        border-left: 0px;
+        /*border-bottom: 2px solid #f0f0f0;*/
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .currentlink:hover {
+        text-decoration: none;
+    }
+
+    .navlink:hover {
+        color: #FFF;
+        box-shadow: inset 2px 0px #FFF;
+        border-left: 2px solid #FFF;
+    }
+
     .main-content {
         width: 100%;
     }
 
     .front-page-article-header {
-        width: 90%;
+        width: 85%;
         float: left;
         margin: 20px auto 10px 2%;
     }
 
-        .front-page-article-header h1 {
-            text-align: center;
-        }
+    .front-page-header-title {
+        text-align: center;
+    }
 
     .article-content {
         width: 90%;
         float: left;
         margin-left: 2%;
     }
-
-
 
     .article-widget {
     }
@@ -354,22 +371,66 @@ ul.social li {
     .top-content {
     }
 
-    .bottom-content {
+    S .bottom-content {
     }
 
     .sidebar {
-
+        width: 90%;
+        margin-left: 2%;
     }
 
     .sidebar-widget {
-
+        width: unset;
+        margin: 0px 0px 10px 0px;
     }
 
     .post-info {
+    }
 
+    .topic-section {
+        width: 100%;
+        margin: unset;
+        border-top: 2px solid #333333;
     }
 
     .topic-programming, .topic-other {
-
+        width: 90%;
+        float: left;
+        margin: 10px 0px 10px 2%;
+        text-align: center;
     }
-}
+
+    .topicicon {
+        height: 100px;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .section-main-footer {
+        width: 90%;
+        float: left;
+        margin: 0px 0px 10px 2%;
+        text-align: center;
+    }
+
+    ul.social li {
+        display: inline;
+    }
+
+        ul.social li img {
+            height: 50px;
+        }
+
+    .sociallink:hover {
+        border-bottom: 2px solid #FFF;
+    }
+
+    .copyright-footer {
+        border-top: 1px solid #404E50;
+        background-color: #333333;
+        max-height: 50px;
+        text-align: center;
+        opacity: 0.95;
+    }
