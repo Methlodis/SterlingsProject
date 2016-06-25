@@ -83,14 +83,14 @@ a {
 
 nav {
     float: right;
-    padding: 30px 5px 15px 0px;
+    padding: 10px 5px 15px 0px;
 }
 
 #menu-icon {
     display: hidden;
     width: 40px;
     height: 40px;
-    margin-top: -15px;
+    margin: 0px 5px 0px 0px;
     background-image: url('../icons/menu.png');
 }
 
@@ -125,7 +125,7 @@ nav ul li {
 .navlink:hover {
     color: #FFF;
     box-shadow: inset 0px -2px #FFF;
-    border-bottom: 0px solid #FFF;
+    text-shadow: 0px 0px 0px #FFF;
 }
 
 #doc {
@@ -307,6 +307,7 @@ ul.social li {
         right: 0px;
         top: 70px;
         width: 25%;
+        opacity: 0.99;
     }
 
     nav li {
@@ -336,7 +337,7 @@ ul.social li {
     .navlink:hover {
         color: #FFF;
         box-shadow: inset 2px 0px #FFF;
-        border-left: 2px solid #FFF;
+        text-shadow: 0px 0px 0px #FFF;
     }
 
     .main-content {
