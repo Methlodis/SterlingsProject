@@ -12,24 +12,19 @@ body {
 }
 
 h1 {
-    text-align: center;
-    font-size: 180%;
-    line-height: 120%;
-    padding: 5% 0px;
+
 }
 
 h2 {
-    text-decoration: underline;
-    padding-left: 2%;
+
 }
 
 h3 {
-    line-height: 110%;
-    padding: 5% 0px;
+
 }
 
 p {
-    padding: 1%;
+
 }
 
 img {
@@ -64,7 +59,7 @@ a {
 .navbarstart {
     background: #333333;
     width: 100%;
-    height: 70px;
+    height: 0px;
     top: 0px;
     left: 0px;
 }
@@ -127,7 +122,11 @@ nav ul li {
     box-shadow: inset 0px -2px #FFF;
     text-shadow: 0px 0px 0px #FFF;
 }
-
+.navbar-base {
+    background: #333333;
+    width: 100%;
+    height: 70px;
+}
 #doc {
     background: #555;
     width: 100%;
@@ -141,7 +140,6 @@ nav ul li {
 
 .blueberry {
     max-width: 960px;
-    margin-top: 110px;
 }
 
 .main-content {
@@ -241,6 +239,7 @@ nav ul li {
     clear: both;
 }
 
+/*Website Footer*/
 .main-footer {
     background: #333333;
     width: 100%;
@@ -279,11 +278,41 @@ ul.social li {
 .copyright-footer {
     border-top: 1px solid #404E50;
     background-color: #333333;
-    max-height: 50px;
-    text-align: center;
+    width: 100%;
+    overflow: hidden;
     opacity: 0.95;
 }
-/*----------------------------Media!!!-----------------*/
+
+.div-copyright-footer {
+    width: 29%;
+    float: left;
+    margin: 10px 2%;
+    text-align: center;
+}
+/*END--Website Footer--END*/
+
+/*START--Parallax Resume--START*/
+.parallax-base {
+    background-color: #333333;
+    width: 100%;  
+}
+.parallax {
+    background-position: 0px 70px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-image: url('../highlightimages/bannerImanges/qifuyjd6.bmp');
+}
+
+.parallax-inner {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom: 5px solid #333333;
+}
+/*END--Parallax Resume--END*/
+
+/*START--Mobile Display--START*/
 @media screen and (max-width: 478px) {
     body {
         position: absolute;
